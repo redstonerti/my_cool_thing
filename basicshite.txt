@@ -1,5 +1,4 @@
-BASIC SHITE TO REMEMBER 
+BASIC SHITE TO REMEMBER
 
 -box model nav menu
 -footer (every page, members+year)
--

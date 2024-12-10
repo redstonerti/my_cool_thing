@@ -1,21 +1,17 @@
-.header {
-    padding: 2%;
-    height: 3%;
-    text-align: center;
-    background-color: #FF4B3E;
-}
-
 .button {
     background-color: white;
     color: black;
     transition-duration: 0.5s;
-    padding: 1%;
-    padding-top: 0.2%;
-    padding-bottom: 0.2%;
     margin: 0%;
+    padding: 0%;
 }
 
 .button:hover {
     background-color: black;
     color: white;
+}
+
+iframe {
+    width: 100%;
+    border: none;
 }
