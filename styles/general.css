@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: "Roboto";
 }
 
 iframe {
@@ -18,10 +19,6 @@ iframe {
     margin-bottom: 0;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-}
 
 .banner {
     width: 100%;

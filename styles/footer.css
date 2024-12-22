@@ -11,18 +11,18 @@ body {
     display: inline-block;
     width: 100%;
     height: fit-content;
+    font-family: "Roboto";
 }
 
 footer {
-    background-color: #666666;
+    background-color: #53799E;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #EDF2F9;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
     box-sizing: border-box;
 }
-
 
 
 .footer-left p,
@@ -39,7 +39,7 @@ footer {
 
 .footer-center ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #EDF2F9;
     font-weight: bold;
 }
 
@@ -48,7 +48,7 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: #EDF2F9;
     text-decoration: none;
 }
 
