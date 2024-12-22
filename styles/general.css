@@ -5,15 +5,96 @@ iframe {
     margin-right: auto;
 }
 
-.footer {
-    position: fixed;
-    /* Ensures the iframe stays in one place */
-    bottom: 0;
-    /* Aligns it to the bottom of the page */
-    left: 0;
-    /* Aligns it to the left side */
-    /* Makes the iframe span the full width */
-    height: 200px;
-    /* Sets the height of the iframe (adjust as needed) */
-    border: none;
+footer {
+    background-color: #666666;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-center ul li a:hover {
+    color: #f39c12;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-images {
+    display: flex;
+    width: 200%;
+    animation: slide 6s infinite;
+}
+
+.banner-images img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+    >>>>>>>1779c833f2d8fbb8679b87aa50279efd03e37b54
 }
