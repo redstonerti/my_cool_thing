@@ -5,56 +5,15 @@ iframe {
     margin-right: auto;
 }
 
-footer {
-    background-color: #666666;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-}
-
-
-.footer-left p,
-.footer-right p {
-    margin: 0;
-}
-
-.footer-center ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.footer-center ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.footer-center ul li a:hover {
-    color: #f39c12;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-
-.footer-container {
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-    margin-bottom: 10px;
+.footer {
+    position: fixed;
+    /* Ensures the iframe stays in one place */
+    bottom: 0;
+    /* Aligns it to the bottom of the page */
+    left: 0;
+    /* Aligns it to the left side */
+    /* Makes the iframe span the full width */
+    height: 200px;
+    /* Sets the height of the iframe (adjust as needed) */
+    border: none;
 }
