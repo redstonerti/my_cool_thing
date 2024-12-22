@@ -3,5 +3,4 @@ window.onload = function () {
         id: 'footer_iframe',
         height: document.body.getBoundingClientRect().height,
     }, '*');
-    console.log("done");
 }
