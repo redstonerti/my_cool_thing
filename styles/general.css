@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: "Roboto";
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 iframe {
@@ -51,4 +51,59 @@ iframe {
     100% {
         transform: translateX(0);
     }
+}
+
+.box-epit {
+
+    width: 1430px;
+    height: 3000px;
+    padding: 20px;
+    border: 5px solid #53799E;
+    margin: 15px;
+    background-color: rgb(231, 231, 231);
+    /* background-image: url("pictures/sky.jpg");
+    background-size: cover;
+    z-index: -1; dont mess with this comment  */
+
+
+}
+
+h1 {
+
+    color: #324b61;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box-party {
+
+    width: 1430px;
+    height: 3000px;
+    padding: 20px;
+    border: 5px solid #53799E;
+    margin: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+.box-euk {
+
+    width: 1430px;
+    height: 3000px;
+    padding: 20px;
+    border: 5px solid #53799E;
+    margin: 15px;
+    background-color: rgb(231, 231, 231);
+}
+
+h2 {
+
+    color: #4c6f8e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    margin: 15px
+}
+
+tr:hover {
+    background-color: #c9ced3;
 }
