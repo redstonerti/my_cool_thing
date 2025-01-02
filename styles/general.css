@@ -100,10 +100,11 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-table {
-    margin: 15px
-}
 
 tr:hover {
     background-color: #c9ced3;
+}
+
+table {
+    margin-top: 40px;
 }
