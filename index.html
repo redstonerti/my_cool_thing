@@ -5,21 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./styles/general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./scripts/script.js"></script>
+
 </head>
 
 <body>
-    <a></a>
-    <h1>Hi</h1>
-    <nav>
-        <a href="./products.html">Products</a> |
-        <a href="/css/">CSS</a> |
-        <a href="/js/">JavaScript</a> |
-        <a href="/python/">Python</a>
-    </nav>
+    <iframe src="pages/navbar.html" class="navbar" id="navbar_iframe"></iframe>
+    <h1>Welcome to our website!</h1>
 
+    <div class="banner">
+        <div class="banner-images">
+            <img src="pictures/banner_pic_1_students.jpg" alt="Students">
+            <img src="pictures/banner_pic_2_students.jpg" alt="Students">
+        </div>
+    </div>
 
+    <iframe src="pages/footer.html" class="footer" id="footer_iframe"></iframe>
 </body>
 
 </html>

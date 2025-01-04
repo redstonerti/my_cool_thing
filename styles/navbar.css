@@ -1,0 +1,25 @@
+html,
+body {
+    display: inline;
+    overflow: hidden;
+    font-family: "Roboto";
+}
+
+
+.button {
+    background-color: #EDF2F9;
+    color: #002129;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #324b61;
+}
+
+
+nav {
+    background-color: #53799E;
+    padding: 5px;
+}
