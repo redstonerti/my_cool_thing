@@ -55,8 +55,8 @@ iframe {
 
 .box-epit {
 
-    width: 1430px;
-    height: 3000px;
+    width: 95%;
+    height: auto;
     padding: 20px;
     border: 5px solid #53799E;
     margin: 15px;
@@ -107,4 +107,81 @@ tr:hover {
 
 table {
     margin-top: 40px;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+
+#popup img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgb(224, 224, 224);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cropped-img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+p {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact-table {
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px;
+
+}
+
+#contact-table th {
+    border: 1px solid #4c6f8e;
+    border-collapse: collapse;
+    border-style: outset;
+
+}
+
+#contact-table td {
+    border: 1px solid #4c6f8e;
+    border-collapse: collapse;
+    border-style: outset;
+
+}
+
+.box-contact {
+
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    border: 5px solid #53799E;
+    margin: 15px;
+    background-color: rgb(231, 231, 231);
 }
