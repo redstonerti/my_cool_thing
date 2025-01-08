@@ -4,8 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
 }
-
 
 iframe {
     width: 100%;
@@ -61,6 +61,17 @@ iframe {
     border: 5px solid #53799E;
     margin: 15px;
     background-color: rgb(231, 231, 231);
+    /* background-image: url("pictures/sky.jpg");
+    background-size: cover;
+    z-index: -1; dont mess with this comment  */
+
+
+}
+
+h1 {
+
+    color: #324b61;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .box-party {
@@ -83,6 +94,11 @@ iframe {
     background-color: rgb(231, 231, 231);
 }
 
+h2 {
+
+    color: #4c6f8e;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 tr:hover {
@@ -130,71 +146,8 @@ table {
     overflow: hidden;
 }
 
-#lessons_background {
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    background-color: #064789;
-    box-shadow: 10px 10px 10px 10px #C2D3EB;
-    color: #EDF2F9;
-    border-radius: 10px;
-    padding: 1%;
+p {
 
-}
-
-#lessons_background img {
-    height: 100px;
-    border-radius: 10px;
-    margin: 3%;
-}
-
-.lesson {
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    color: #010A14;
-    height: 300px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 10px 10px #53799E;
-    background-color: rgb(231, 231, 231);
-}
-
-.lesson:hover .read_more {
-    opacity: 1;
-    transition: 0.3s ease;
-}
-
-.lesson_img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.read_more {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    padding-bottom: 3%;
-    text-decoration: none;
-    color: #064789;
-    opacity: 0.3;
-    transition: opacity 0.3s;
-}
-
-.lesson_outer {
-    display: inline-block;
-    align-content: center;
-    vertical-align: top;
-    margin-left: 1%;
-    margin-right: 1%;
-    width: 290px;
-}
-
-.centerer_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
