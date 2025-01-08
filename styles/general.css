@@ -19,6 +19,20 @@ iframe {
     margin-bottom: 0;
 }
 
+h1 {
+    color: #324b61;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #4c6f8e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1.classes_styling,
+h2.classes_styling {
+    color: #EDF2F9;
+}
 
 .banner {
     width: 100%;
