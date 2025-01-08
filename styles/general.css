@@ -166,12 +166,36 @@ table {
 
 .box-contact {
 
-    width: 95%;
+
+    width: 90%;
     height: auto;
     padding: 20px;
-    border: 5px solid #53799E;
+    border: 5px solid #94b4d4;
     margin: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #d3e1f0;
+    border-radius: 10px;
+    box-shadow: 10px 15px 15px grey;
+
+}
+
+#contact-table tr:hover {
+
     background-color: rgb(231, 231, 231);
+}
+
+.box-contact a {
+    color: #4c6f8e;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.box-contact a:hover {
+    text-decoration: underline
+}
+
+.box-contact a:visited {
+    color: #582369;
 }
 
 #lessons_background {
