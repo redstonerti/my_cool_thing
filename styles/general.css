@@ -151,3 +151,37 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#contact-table {
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px;
+
+}
+
+#contact-table th {
+    border: 1px solid #4c6f8e;
+    border-collapse: collapse;
+    border-style: outset;
+
+}
+
+#contact-table td {
+    border: 1px solid #4c6f8e;
+    border-collapse: collapse;
+    border-style: outset;
+
+}
+
+.box-contact {
+
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    border: 5px solid #53799E;
+    margin: 15px;
+    background-color: rgb(231, 231, 231);
+}
