@@ -8,7 +8,6 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-
 iframe {
     width: 100%;
     border: none;
@@ -76,6 +75,17 @@ h2.classes_styling {
     border: 5px solid #53799E;
     margin: 15px;
     background-color: rgb(231, 231, 231);
+    /* background-image: url("pictures/sky.jpg");
+    background-size: cover;
+    z-index: -1; dont mess with this comment  */
+
+
+}
+
+h1 {
+
+    color: #324b61;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .box-party {
@@ -98,6 +108,11 @@ h2.classes_styling {
     background-color: rgb(231, 231, 231);
 }
 
+h2 {
+
+    color: #4c6f8e;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 tr:hover {
@@ -143,25 +158,6 @@ table {
     width: auto;
     object-fit: cover;
     overflow: hidden;
-}
-
-#lessons_background {
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    background-color: #064789;
-    box-shadow: 10px 10px 10px 10px #C2D3EB;
-    color: #EDF2F9;
-    border-radius: 10px;
-    padding: 1%;
-
-}
-
-#lessons_background img {
-    height: 100px;
-    border-radius: 10px;
-    margin: 3%;
 }
 
 .lesson {
