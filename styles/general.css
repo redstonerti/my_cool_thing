@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 
@@ -22,12 +23,10 @@ iframe {
 
 h1 {
     color: #324b61;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
     color: #4c6f8e;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h1.classes_styling,
@@ -40,6 +39,7 @@ h2.classes_styling {
     height: 400px;
     overflow: hidden;
     position: relative;
+
 }
 
 .banner-images {
