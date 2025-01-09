@@ -4,14 +4,12 @@ body {
     overflow: hidden;
 }
 
-
 .button {
     background-color: #EDF2F9;
     color: #002129;
     transition-duration: 0.3s;
     border-radius: 10px;
     font-family: Verdana, Tahoma, sans-serif;
-
 }
 
 .button:hover {

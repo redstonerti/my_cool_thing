@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     /* Σε όλα τα κουτιά */
 }
 
@@ -14,7 +16,6 @@ body {
 
 footer {
     background-color: #53799E;
-    font-family: 'Roboto', sans-serif;
     color: #EDF2F9;
     padding: 20px 0;
     text-align: center;
@@ -22,6 +23,14 @@ footer {
     box-sizing: border-box;
 }
 
+a {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
 /*Λίστες για οργάνωση περιεχομένου */
 
 .footer-center ul {
@@ -50,13 +59,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
-
 .footer-container {
     flex-direction: column;
     text-align: center;
 }
-
 
 .footer-left,
 .footer-center,
