@@ -1,11 +1,14 @@
 let progress = 0;
 let scroll_delta = 0;
 let scroll_sensitivity = 0.000001;
+
 window.addEventListener('wheel', (event) => {
     scroll_delta += event.deltaY * scroll_sensitivity;
     event.preventDefault();
 }, { passive: false });
 
+let introCards = document.getElementsByClassName('intro_card');
+console.log(introCards);
 
 let lastTime = 0;
 function update(timestamp) {
@@ -23,7 +26,11 @@ function update(timestamp) {
     let title_icon = document.getElementById("title_icon");
     title_icon.style.bottom = `${75 - (get_progress_segment(0.2, 0.3)) * 15}px`;
     title_icon.style.left = `${15 - (get_progress_segment(0.2, 0.3)) * 15} px`;
-    //`inset(0 ${(1 - (Math.max(0, Math.min((progress - start) / range, 1)))) * 100}% 0 0)`
+    //`inset(0 ${get_progress_segment(0.3, 1, true) * 100}% 0 0)`
+    for (let i = 1; i <= introCards.length; i++) {
+        let pieces = 0.7 / introCards.length;
+        introCards[i - 1].style.clipPath = `inset(0 ${get_progress_segment(0.3 + (i - 1) * pieces, 0.3 + (i) * pieces, true) * 100}% 0 0)`;
+    }
     if (progress != 1) {
         requestAnimationFrame(update);
     }
@@ -61,6 +68,16 @@ function end_animation() {
     title.style.transitionDuration = `500ms`;
     title.style.color = `#0485d6`;
     title.style.textShadow = `00px 0px 30px #f6f3f4`;
+    for (let i = 0; i < introCards.length; i++) {
+        introCards[i].style.transitionDuration = `500ms`;
+        introCards[i].style.backgroundColor = `#007ac9`;
+        introCards[i].style.color = `#ffffff`;
+    }
+    let introCardShadows = document.getElementsByClassName('intro_card_shadow');
+    for (let i = 0; i < introCardShadows.length; i++) {
+        introCardShadows[i].style.transitionDuration = `500ms`;
+        introCardShadows[i].style.filter = `drop-shadow(10px 10px 10px rgba(0, 0, 0, 1))`;
+    }
     add_navbar();
     add_footer();
 }

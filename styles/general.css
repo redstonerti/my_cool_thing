@@ -313,8 +313,49 @@ table {
     box-shadow: 10px 10px 10px;
     width: 50px;
     height: 50px;
-    background-position: 50px 50px;
     position: relative;
     bottom: 75px;
     left: 15px;
+}
+
+#intro_div {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro_card_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.intro_card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #010A14;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    clip-path: inset(0 00% 0 0);
+}
+
+.intro_card_shadow {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+}
+
+
+
+.intro_card hr {
+    color: black;
+    background-color: black;
 }
