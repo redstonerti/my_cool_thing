@@ -2,9 +2,7 @@ html,
 body {
     display: inline;
     overflow: hidden;
-
 }
-
 
 .button {
     background-color: #EDF2F9;
@@ -23,4 +21,5 @@ body {
 nav {
     background-color: #53799E;
     padding: 5px;
+
 }

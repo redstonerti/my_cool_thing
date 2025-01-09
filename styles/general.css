@@ -55,6 +55,8 @@ h2.classes_styling {
     object-fit: cover;
 }
 
+/* Keyframes για κινούμενο banner φωτογραφιών με ποσοστά για την κίνηση επί της οθόνης */
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -107,6 +109,8 @@ table {
     margin-top: 40px;
 }
 
+/* Μορφοποίηση lightbox */
+
 #popup {
     display: none;
     position: fixed;
@@ -125,6 +129,8 @@ table {
     max-height: 80%;
 }
 
+/* Μορφοποίηση κουμπιού 'Χ' για κλείσιμο εικόνας */
+
 #close {
     position: absolute;
     top: 20px;
@@ -135,6 +141,9 @@ table {
     font-size: 20px;
     cursor: pointer;
 }
+
+/* Φαινομενικό "κόψιμο" εικόνων πριν ανοιχτούν ώστε να είναι συμμετρικές 
+μεταξύ τους */
 
 .cropped-img {
     height: 200px;
@@ -168,7 +177,6 @@ table {
 }
 
 .box-contact {
-
 
     width: 90%;
     height: auto;
@@ -353,9 +361,22 @@ table {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
 }
 
-
-
 .intro_card hr {
     color: black;
     background-color: black;
+
+#faculty-img {
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    margin: 1%;
+}
+
+#faculty-head {
+    color: #53799E;
+}
+
+#faculty-text {
+
+    display: flex;
 }
