@@ -2,6 +2,7 @@ html,
 body {
     display: inline;
     overflow: hidden;
+
 }
 
 
@@ -10,6 +11,7 @@ body {
     color: #002129;
     transition-duration: 0.3s;
     border-radius: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .button:hover {

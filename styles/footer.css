@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 
 footer {
     background-color: #53799E;
-    font-family: 'Roboto', sans-serif;
     color: #EDF2F9;
     padding: 20px 0;
     text-align: center;
@@ -23,6 +23,9 @@ footer {
     box-sizing: border-box;
 }
 
+a {
+    font-family: Verdana, Tahoma, sans-serif;
+}
 
 .footer-left p,
 .footer-right p {
