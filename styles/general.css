@@ -52,6 +52,8 @@ h2.classes_styling {
     object-fit: cover;
 }
 
+/* Keyframes για κινούμενο banner φωτογραφιών με ποσοστά για την κίνηση επί της οθόνης */
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -104,6 +106,8 @@ table {
     margin-top: 40px;
 }
 
+/* Μορφοποίηση lightbox */
+
 #popup {
     display: none;
     position: fixed;
@@ -122,6 +126,8 @@ table {
     max-height: 80%;
 }
 
+/* Μορφοποίηση κουμπιού 'Χ' για κλείσιμο εικόνας */
+
 #close {
     position: absolute;
     top: 20px;
@@ -132,6 +138,9 @@ table {
     font-size: 20px;
     cursor: pointer;
 }
+
+/* Φαινομενικό "κόψιμο" εικόνων πριν ανοιχτούν ώστε να είναι συμμετρικές 
+μεταξύ τους */
 
 .cropped-img {
     height: 200px;
@@ -165,7 +174,6 @@ table {
 }
 
 .box-contact {
-
 
     width: 90%;
     height: auto;

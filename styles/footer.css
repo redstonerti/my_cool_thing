@@ -1,12 +1,11 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* Σε όλα τα κουτιά */
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
     display: inline-block;
     width: 100%;
     height: fit-content;
@@ -23,16 +22,10 @@ footer {
     box-sizing: border-box;
 }
 
-
-.footer-left p,
-.footer-right p {
-    margin: 0;
-}
+/*Λίστες για οργάνωση περιεχομένου */
 
 .footer-center ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
@@ -45,6 +38,8 @@ footer {
 .footer-center ul li a:hover {
     color: #f39c12;
 }
+
+/* Εφέ για υπερσυνδέσμους */
 
 footer a {
     color: #EDF2F9;
@@ -61,6 +56,7 @@ footer a:hover {
     flex-direction: column;
     text-align: center;
 }
+
 
 .footer-left,
 .footer-center,
