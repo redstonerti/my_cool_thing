@@ -2,3 +2,4 @@ BASIC SHITE TO REMEMBER
 
 -box model nav menu
 -make search bar >:)
+-css navbar font
