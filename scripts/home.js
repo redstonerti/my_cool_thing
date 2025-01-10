@@ -1,7 +1,11 @@
 let progress = false;
 let scroll_delta = 0;
 let scroll_sensitivity = 0.000001;
-let no_animation = false;
+let no_animation = localStorage.getItem('animationPlayed');
+localStorage.setItem('animationPlayed', 'true');
+if (no_animation)
+    progress = 1;
+
 
 window.addEventListener('wheel', (event) => {
     scroll_delta += event.deltaY * scroll_sensitivity;
@@ -32,7 +36,6 @@ function update(timestamp) {
         let pieces = 0.7 / introCards.length;
         introCards[i - 1].style.clipPath = `inset(0 ${get_progress_segment(0.3 + (i - 1) * pieces, 0.3 + (i) * pieces, true) * 100}% 0 0)`;
     }
-    console.log("1");
     if (progress != 1) {
         requestAnimationFrame(update);
     }
@@ -57,31 +60,35 @@ function interpolateString(inputString, ratio) {
 }
 function end_animation() {
     let progress_bar = document.getElementById("progress_bar");
-    progress_bar.style.transitionDuration = `500ms`;
-    progress_bar.style.height = 0;
-    let home_background = document.getElementById("home_background");
-    home_background.style.backgroundColor = `#f6f3f4`;
     let title_icon = document.getElementById("title_icon");
-    title_icon.style.transitionDuration = `500ms`;
+    let title = document.getElementById("title");
+    let home_background = document.getElementById("home_background");
+    let introCardShadows = document.getElementsByClassName('intro_card_shadow');
+    if (!no_animation) {
+        home_background.style.transitionDuration = `1000ms`;
+        progress_bar.style.transitionDuration = `500ms`;
+        title_icon.style.transitionDuration = `500ms`;
+        title.style.transitionDuration = `500ms`;
+    }
+    progress_bar.style.height = 0;
+    home_background.style.backgroundColor = `#f6f3f4`;
     title_icon.style.border = `solid #EDF2F9 0px`;
     title_icon.style.borderRadius = `0.5vw`;
-    let title = document.getElementById("title");
-    title.style.transitionDuration = `500ms`;
     title.style.color = `#0485d6`;
     title.style.textShadow = `00px 0px 30px #f6f3f4`;
     for (let i = 0; i < introCards.length; i++) {
-        introCards[i].style.transitionDuration = `500ms`;
+        if (!no_animation)
+            introCards[i].style.transitionDuration = `500ms`;
         introCards[i].style.backgroundColor = `#007ac9`;
         introCards[i].style.color = `#ffffff`;
     }
-    let introCardShadows = document.getElementsByClassName('intro_card_shadow');
     for (let i = 0; i < introCardShadows.length; i++) {
-        introCardShadows[i].style.transitionDuration = `500ms`;
+        if (!no_animation)
+            introCardShadows[i].style.transitionDuration = `500ms`;
         introCardShadows[i].style.filter = `drop-shadow(10px 10px 10px rgba(0, 0, 0, 1))`;
     }
     add_navbar();
     add_footer();
-    console.log("2");
 }
 
 function add_navbar() {

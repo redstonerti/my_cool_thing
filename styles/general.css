@@ -284,7 +284,6 @@ table {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    transition-duration: 1000ms;
 }
 
 #progress_bar {
