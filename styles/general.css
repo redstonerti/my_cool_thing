@@ -383,3 +383,11 @@ table {
 
     display: flex;
 }
+
+button {
+
+    margin: 1%;
+    outline-style: solid;
+    outline-color: white;
+    background-color: #e1eaf4
+}
