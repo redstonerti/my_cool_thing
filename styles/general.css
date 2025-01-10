@@ -347,13 +347,13 @@ table {
     text-align: center;
     position: relative;
     color: #010A14;
-    font-size: 1vw;
+    font-size: 1.7vh;
     width: 20vh;
     height: 20vh;
-    border-radius: 1vw;
+    border-radius: 2vh;
     background-color: rgb(231, 231, 231);
-    padding: 10px;
-    clip-path: inset(0 00% 0 0);
+    padding: 1vh;
+    clip-path: inset(0 0% 0 0);
 }
 
 .intro_card_shadow {
