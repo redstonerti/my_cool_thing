@@ -14,7 +14,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     transition-duration: 500ms;
-
 }
 
 .footer {
@@ -284,7 +283,6 @@ table {
     width: 100vw;
     height: 100vh;
     z-index: -2;
-    transition-duration: 1000ms;
 }
 
 #progress_bar {
@@ -297,7 +295,7 @@ table {
 }
 
 #title {
-    font-size: 700%;
+    font-size: 5vw;
     text-shadow: 00px 0px 30px #010A14;
     color: #f6f3f4;
 }
@@ -312,18 +310,17 @@ table {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: max-content;
 }
 
 #title_icon {
-    border-radius: 20px;
-    border: solid #EDF2F9 5px;
-    box-shadow: 10px 10px 10px;
-    width: 50px;
-    height: 50px;
+    border-radius: 1.2vw;
+    border: solid #EDF2F9 0.3vw;
+    box-shadow: 0.10vw 0.10vw 0.10vw;
+    width: 3vw;
+    height: 3vw;
     position: relative;
-    bottom: 75px;
-    left: 15px;
+
 }
 
 #intro_div {
@@ -331,34 +328,40 @@ table {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 55vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .intro_card_row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .intro_card {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
+    font-weight: bold;
+    text-align: center;
     position: relative;
     color: #010A14;
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
+    font-size: 1.7vh;
+    width: 22.5vh;
+    height: 22.5vh;
+    border-radius: 2vh;
     background-color: rgb(231, 231, 231);
-    padding: 10px;
-    clip-path: inset(0 00% 0 0);
+    padding: 1vh;
+    clip-path: inset(0 0% 0 0);
 }
 
 .intro_card_shadow {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .intro_card hr {
