@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .correct {
+            background-color: green;
+            color: white;
+        }
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+        .question {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+
+    <!-- Ερώτηση 1 -->
+    <div id="question1" class="question active">
+        <p>Ποια είναι η πρωτεύουσα της Ελλάδας;</p>
+        <button onclick="checkAnswer(1, 'A', this)">Αθήνα</button>
+        <button onclick="checkAnswer(1, 'B', this)">Θεσσαλονίκη</button>
+        <button onclick="checkAnswer(1, 'C', this)">Πάτρα</button>
+        <button onclick="checkAnswer(1, 'D', this)">Ηράκλειο</button>
+    </div>
+
+    <!-- Ερώτηση 2 -->
+    <div id="question2" class="question">
+        <p>Ποιος είναι ο μεγαλύτερος ωκεανός;</p>
+        <button onclick="checkAnswer(2, 'A', this)">Ειρηνικός</button>
+        <button onclick="checkAnswer(2, 'B', this)">Ατλαντικός</button>
+        <button onclick="checkAnswer(2, 'C', this)">Ινδικός</button>
+        <button onclick="checkAnswer(2, 'D', this)">Βόρειος Παγωμένος</button>
+    </div>
+
+    <!-- Ερώτηση 3 -->
+    <div id="question3" class="question">
+        <p>Ποιο είναι το πιο ψηλό βουνό στον κόσμο;</p>
+        <button onclick="checkAnswer(3, 'A', this)">Everest</button>
+        <button onclick="checkAnswer(3, 'B', this)">K2</button>
+        <button onclick="checkAnswer(3, 'C', this)">Αλπεις</button>
+        <button onclick="checkAnswer(3, 'D', this)">Ολυμπος</button>
+    </div>
+
+    <!-- Ερώτηση 4 -->
+    <div id="question4" class="question">
+        <p>Ποιο είναι το μεγαλύτερο ζώο στον κόσμο;</p>
+        <button onclick="checkAnswer(4, 'A', this)">Φάλαινα</button>
+        <button onclick="checkAnswer(4, 'B', this)">Ελέφαντας</button>
+        <button onclick="checkAnswer(4, 'C', this)">Καμηλοπάρδαλη</button>
+        <button onclick="checkAnswer(4, 'D', this)">Αρκούδα</button>
+    </div>
+
+    <!-- Ερώτηση 5 -->
+    <div id="question5" class="question">
+        <p>Ποιος ανακάλυψε την Αμερική;</p>
+        <button onclick="checkAnswer(5, 'A', this)">Χριστόφορος Κολόμβος</button>
+        <button onclick="checkAnswer(5, 'B', this)">Φερδινάνδος Μαγγελάνος</button>
+        <button onclick="checkAnswer(5, 'C', this)">Βάσκο ντα Γκάμα</button>
+        <button onclick="checkAnswer(5, 'D', this)">Νικόλαος Κοπέρνικος</button>
+    </div>
+
+    <script>
+        // Σωστές απαντήσεις
+        const correctAnswers = {
+            1: 'A', // Σωστή απάντηση για την ερώτηση 1
+            2: 'A', // Σωστή απάντηση για την ερώτηση 2
+            3: 'A', // Σωστή απάντηση για την ερώτηση 3
+            4: 'A', // Σωστή απάντηση για την ερώτηση 4
+            5: 'A', // Σωστή απάντηση για την ερώτηση 5
+        };
+
+        let currentQuestion = 1; // Αρχικά ξεκινάμε από την πρώτη ερώτηση
+
+        // Συνάρτηση για έλεγχο της απάντησης
+        function checkAnswer(questionNumber, answer, button) {
+            const questionDiv = document.getElementById('question' + questionNumber);
+            const buttons = questionDiv.getElementsByTagName('button');
+
+            // Αφαίρεση χρωμάτων από τα κουμπιά της τρέχουσας ερώτησης
+            for (let btn of buttons) {
+                btn.disabled = true;  // Απενεργοποιούμε τα κουμπιά μετά την επιλογή
+                btn.classList.remove('correct', 'incorrect');
+            }
+
+            // Ελέγχουμε αν η απάντηση είναι σωστή ή λάθος
+            if (answer === correctAnswers[questionNumber]) {
+                button.classList.add('correct');
+                alert('Σωστό!');
+            } else {
+                button.classList.add('incorrect');
+                // Εμφανίζουμε τη σωστή απάντηση
+                for (let btn of buttons) {
+                    if (btn.textContent === correctAnswers[questionNumber]) {
+                        btn.classList.add('correct');
+                    }
+                }
+                alert('Λάθος! Η σωστή απάντηση ήταν: ' + correctAnswers[questionNumber]);
+            }
+
+            // Εμφανίζουμε την επόμενη ερώτηση
+            if (currentQuestion < 5) {
+                setTimeout(() => {
+                    document.getElementById('question' + questionNumber).classList.remove('active');
+                    currentQuestion++;
+                    document.getElementById('question' + currentQuestion).classList.add('active');
+                }, 1000); // Κρατάμε την απάντηση για 1 δευτερόλεπτο πριν προχωρήσουμε στην επόμενη ερώτηση
+            } else {
+                alert("Το quiz ολοκληρώθηκε!");
+            }
+        }
+    </script>
+</body>
+</html>

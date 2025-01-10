@@ -54,49 +54,35 @@ h2.classes_styling {
     object-fit: cover;
 }
 
-/* Keyframes για κινούμενο banner φωτογραφιών με ποσοστά για την κίνηση επί της οθόνης */
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .box-epit {
 
-    width: 95%;
-    height: auto;
-    padding: 20px;
-    border: 5px solid #53799E;
-    margin: 15px;
+    height: 2000vh;
+    padding: 2vw;
+    border: 5vw solid #3c5873;
+    border-radius: 3vw;
+    margin: 5vh;
     background-color: rgb(231, 231, 231);
 }
 
 .box-party {
 
-    width: 1430px;
-    height: 3000px;
-    padding: 20px;
-    border: 5px solid #53799E;
-    margin: 15px;
+
+    height: 3000vh;
+    padding: 2vw;
+    border: 0.5vw solid #53799E;
+    border-radius: 3vw;
+    margin: 5vh;
     background-color: rgb(231, 231, 231);
 }
 
 .box-euk {
 
-    width: 1430px;
-    height: 3000px;
-    padding: 20px;
-    border: 5px solid #53799E;
-    margin: 15px;
+    height: 3000vh;
+    padding: 2vw;
+    border: 0.5vw solid #53799E;
+    border-radius: 3vw;
+
+    margin: 5vh;
     background-color: rgb(231, 231, 231);
 }
 
@@ -152,24 +138,25 @@ table {
 }
 
 #contact-table {
-    padding: 20px;
+    width: 95vw;
+    padding: 2vw;
     background-color: rgb(231, 231, 231);
     text-align: center;
-    border: 1px solid black;
+    border: 0.1vw solid black;
     border-collapse: collapse;
-    margin: 20px;
+    margin: 2vw;
 
 }
 
 #contact-table th {
-    border: 1px solid #4c6f8e;
+    border: 0.1vw solid #4c6f8e;
     border-collapse: collapse;
     border-style: outset;
 
 }
 
 #contact-table td {
-    border: 1px solid #4c6f8e;
+    border: 0.1vw solid #4c6f8e;
     border-collapse: collapse;
     border-style: outset;
 
@@ -177,14 +164,13 @@ table {
 
 .box-contact {
 
-    width: 90%;
-    height: auto;
-    padding: 20px;
-    border: 5px solid #94b4d4;
-    margin: 15px;
+    width: 89vw;
+    padding: 2vw;
+    border: 0.5vw solid #94b4d4;
+    margin: 5vh;
     color: rgb(0, 0, 0);
     background-color: #d3e1f0;
-    border-radius: 10px;
+    border-radius: 1.5vw;
     box-shadow: 10px 15px 15px grey;
 
 }
@@ -462,4 +448,17 @@ button {
     background-color: rgb(231, 231, 231);
     border-radius: 1vw;
     padding: 1vw;
+}
+
+
+#open-img1,
+#open-img2,
+#open-img3 {
+    transition: transform 0.3s ease;
+}
+
+#open-img1:hover,
+#open-img2:hover,
+#open-img3:hover {
+    transform: scale(1.1);
 }
