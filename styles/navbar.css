@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
     margin: 0;
+    display: inline;
 }
 
 .button {
