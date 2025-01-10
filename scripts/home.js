@@ -155,7 +155,7 @@ function show_popup() {
         welcome_text_string = `Καλησπέρα!`;
     }
     else {
-        welcome_text_string = `Γεία σας!`;
+        welcome_text_string = `Γεια σας!`;
     }
     welcome_text.innerText = welcome_text_string;
     time.innerText = `${hours}:${minutes}:${seconds}`;
