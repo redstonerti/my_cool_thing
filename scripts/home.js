@@ -4,7 +4,7 @@ let scroll_sensitivity = 0.000001;
 let no_animation = localStorage.getItem('animationPlayed');
 
 //Uncomment to view animation again
-//no_animation = false;
+no_animation = false;
 
 localStorage.setItem('animationPlayed', 'true');
 if (no_animation)
@@ -79,6 +79,7 @@ function end_animation() {
         title.style.transitionDuration = `500ms`;
     }
     progress_bar.style.height = 0;
+    progress_bar.style.marginTop = 0;
     home_background.style.backgroundColor = `#f6f3f4`;
     title_icon.style.border = `solid #EDF2F9 0px`;
     title_icon.style.borderRadius = `0.5vw`;
@@ -97,6 +98,7 @@ function end_animation() {
     }
     add_navbar();
     add_footer();
+    show_popup();
 }
 
 function add_navbar() {
@@ -120,4 +122,52 @@ function add_footer() {
         iframe.style.transitionDuration = `0ms`;
     }
     document.body.insertAdjacentElement('beforeend', iframe);
+}
+function show_popup() {
+    let should_not_create_popup = localStorage.getItem('popup_created');
+    localStorage.setItem('popup_created', 'true');
+    should_not_create_popup = false;
+    if (should_not_create_popup) {
+        console.log("Not showing popup");
+        return;
+    }
+    console.log("Showing popup");
+    let home_popup = document.getElementById('home_popup');
+    home_popup.style.opacity = 1;
+    let popup_button = document.getElementById('popup_button');
+    popup_button.addEventListener('click', function () {
+        home_popup.style.opacity = 0;
+    });
+    let welcome_text = document.getElementById('welcome_text');
+    let time = document.getElementById('time');
+    let currentTime = new Date();
+    let hours = String(currentTime.getHours()).padStart(2, '0');
+    let minutes = String(currentTime.getMinutes()).padStart(2, '0');
+    let seconds = String(currentTime.getSeconds()).padStart(2, '0');
+    let welcome_text_string;
+    if (hours >= 0 && hours <= 6) {
+        welcome_text_string = `Ξύπνησες νωρίς ε?`;
+    }
+    else if (hours > 6 && hours <= 12) {
+        welcome_text_string = `Καλημέρα!`;
+    }
+    else if (hours > 12 && hours <= 18) {
+        welcome_text_string = `Καλησπέρα!`;
+    }
+    else {
+        welcome_text_string = `Γεία σας!`;
+    }
+    welcome_text.innerText = welcome_text_string;
+    time.innerText = `${hours}:${minutes}:${seconds}`;
+    requestAnimationFrame(update_time);
+}
+
+function update_time() {
+    let time = document.getElementById('time');
+    let currentTime = new Date();
+    let hours = String(currentTime.getHours()).padStart(2, '0');
+    let minutes = String(currentTime.getMinutes()).padStart(2, '0');
+    let seconds = String(currentTime.getSeconds()).padStart(2, '0');
+    time.innerText = `${hours}:${minutes}:${seconds}`;
+    requestAnimationFrame(update_time);
 }
