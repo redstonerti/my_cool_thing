@@ -1,8 +1,4 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     overflow: hidden;
     /* Σε όλα τα κουτιά */
 }
@@ -11,61 +7,33 @@ body {
     display: inline-block;
     width: 100%;
     height: fit-content;
-    font-family: "Roboto";
+    margin: 0;
 }
 
 footer {
     background-color: #53799E;
-    color: #EDF2F9;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-a {
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-.footer-left p,
-.footer-right p {
-    margin: 0;
-}
-/*Λίστες για οργάνωση περιεχομένου */
-
-.footer-center ul {
-    list-style: none;
+    font-size: 0.7vw;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.footer-center ul li a {
+a,
+p {
+    font-family: Verdana, Tahoma, sans-serif;
     text-decoration: none;
     color: #EDF2F9;
-    font-weight: bold;
+    margin: 0.2%;
 }
 
-.footer-center ul li a:hover {
-    color: #f39c12;
-}
 
 /* Εφέ για υπερσυνδέσμους */
 
-footer a {
-    color: #EDF2F9;
-    text-decoration: none;
-}
-
 footer a:hover {
     text-decoration: underline;
-}
-
-.footer-container {
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-    margin-bottom: 10px;
 }
