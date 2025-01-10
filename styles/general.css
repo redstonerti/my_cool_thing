@@ -312,7 +312,7 @@ table {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: max-content;
 }
 
 #title_icon {
@@ -331,17 +331,15 @@ table {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 55vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .intro_card_row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .intro_card {
@@ -349,8 +347,8 @@ table {
     flex-direction: column;
     position: relative;
     color: #010A14;
-    height: 200px;
-    width: 200px;
+    width: 12vw;
+    height: 20vh;
     border-radius: 10px;
     background-color: rgb(231, 231, 231);
     padding: 10px;
@@ -359,6 +357,10 @@ table {
 
 .intro_card_shadow {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .intro_card hr {

@@ -1,6 +1,7 @@
 let progress = 0;
 let scroll_delta = 0;
 let scroll_sensitivity = 0.000001;
+let no_animation = false;
 
 window.addEventListener('wheel', (event) => {
     scroll_delta += event.deltaY * scroll_sensitivity;
@@ -31,6 +32,7 @@ function update(timestamp) {
         let pieces = 0.7 / introCards.length;
         introCards[i - 1].style.clipPath = `inset(0 ${get_progress_segment(0.3 + (i - 1) * pieces, 0.3 + (i) * pieces, true) * 100}% 0 0)`;
     }
+    console.log("1");
     if (progress != 1) {
         requestAnimationFrame(update);
     }
@@ -80,6 +82,7 @@ function end_animation() {
     }
     add_navbar();
     add_footer();
+    console.log("2");
 }
 
 function add_navbar() {
@@ -87,6 +90,9 @@ function add_navbar() {
     iframe.src = 'pages/navbar.html';
     iframe.id = 'navbar_iframe';
     iframe.style.height = 0;
+    if (no_animation) {
+        iframe.style.transitionDuration = `0ms`;
+    }
     document.body.insertAdjacentElement('afterbegin', iframe);
 }
 function add_footer() {
@@ -96,5 +102,8 @@ function add_footer() {
     iframe.className = "footer";
     iframe.style.height = 0;
     iframe.style.marginTop = 0;
+    if (no_animation) {
+        iframe.style.transitionDuration = `0ms`;
+    }
     document.body.insertAdjacentElement('beforeend', iframe);
 }
