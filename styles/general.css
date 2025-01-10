@@ -427,6 +427,18 @@ table {
 
 button {
     margin: 1%;
+    border-radius: 2vh;
+    cursor: pointer;
+    background-color: #d6e5f7;
+
+}
+
+
+.first-letter-style {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 6vh;
+    color: #0485d6;
     outline-style: solid;
     outline-color: white;
     background-color: #e1eaf4
