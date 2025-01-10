@@ -440,17 +440,6 @@ button {
 
 }
 
-
-.first-letter-style {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    font-size: 6vh;
-    color: #0485d6;
-    outline-style: solid;
-    outline-color: white;
-    background-color: #e1eaf4
-}
-
 .teacher-img {
     width: 5vw;
     height: 5vw;
@@ -596,6 +585,7 @@ button {
     transition-duration: 300ms;
 }
 
+
 #answer_correctness_button {
     display: flex;
     font-size: 1.5vw;
@@ -628,9 +618,7 @@ button {
     box-shadow: 1vw 1vw gray;
     transition-duration: 300ms;
 }
+
 .first-letter-style {
     font-size: 5vh;
-    color: #007ac9;
-    background-color: #007ac9;
-    text-decoration: none;
 }
