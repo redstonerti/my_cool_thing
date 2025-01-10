@@ -297,7 +297,7 @@ table {
 }
 
 #title {
-    font-size: 700%;
+    font-size: 5vw;
     text-shadow: 00px 0px 30px #010A14;
     color: #f6f3f4;
 }
@@ -316,14 +316,13 @@ table {
 }
 
 #title_icon {
-    border-radius: 20px;
-    border: solid #EDF2F9 5px;
-    box-shadow: 10px 10px 10px;
-    width: 50px;
-    height: 50px;
+    border-radius: 1.2vw;
+    border: solid #EDF2F9 0.3vw;
+    box-shadow: 0.10vw 0.10vw 0.10vw;
+    width: 3vw;
+    height: 3vw;
     position: relative;
-    bottom: 75px;
-    left: 15px;
+
 }
 
 #intro_div {
@@ -345,11 +344,15 @@ table {
 .intro_card {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
+    font-weight: bold;
+    text-align: center;
     position: relative;
     color: #010A14;
-    width: 12vw;
+    font-size: 1vw;
+    width: 10vw;
     height: 20vh;
-    border-radius: 10px;
+    border-radius: 1vw;
     background-color: rgb(231, 231, 231);
     padding: 10px;
     clip-path: inset(0 00% 0 0);
@@ -357,10 +360,10 @@ table {
 
 .intro_card_shadow {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1));
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .intro_card hr {
@@ -371,8 +374,8 @@ table {
 #faculty-img {
     width: 30%;
     height: auto;
-    padding: 1%;
-    margin: 1%;
+    padding: 2%;
+    margin: 2%;
 }
 
 #faculty-head {

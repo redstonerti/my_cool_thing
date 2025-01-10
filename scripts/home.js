@@ -1,4 +1,4 @@
-let progress = 0;
+let progress = false;
 let scroll_delta = 0;
 let scroll_sensitivity = 0.000001;
 let no_animation = false;
@@ -21,12 +21,12 @@ function update(timestamp) {
     progress_bar.style.width = `${(100 * progress)}vw`;
     let title = document.getElementById("title");
     title.innerText = interpolateString("ΦΡΟΝΤΙΣΗΡΙΑ ΚΟΡΥΦΗ", get_progress_segment(0, 0.2));
-    title.style.fontSize = `${500 - (get_progress_segment(0.1, 0.3)) * 100}%`;
+    title.style.fontSize = `${4 + (get_progress_segment(0.1, 0.3))}vw`;
     let title_div = document.getElementById("title_div");
     title_div.style.top = `${(50 - (get_progress_segment(0.1, 0.3)) * 30)}%`;
     let title_icon = document.getElementById("title_icon");
-    title_icon.style.bottom = `${75 - (get_progress_segment(0.2, 0.3)) * 15}px`;
-    title_icon.style.left = `${15 - (get_progress_segment(0.2, 0.3)) * 15} px`;
+    title_icon.style.bottom = `${(get_progress_segment(0, 0.05)) * 4}vw`;
+    title_icon.style.left = `${(get_progress_segment(0.1, 0.3)) * 0.3}vw`;
     //`inset(0 ${get_progress_segment(0.3, 1, true) * 100}% 0 0)`
     for (let i = 1; i <= introCards.length; i++) {
         let pieces = 0.7 / introCards.length;
@@ -64,8 +64,7 @@ function end_animation() {
     let title_icon = document.getElementById("title_icon");
     title_icon.style.transitionDuration = `500ms`;
     title_icon.style.border = `solid #EDF2F9 0px`;
-    title_icon.style.borderRadius = `10px`;
-    title_icon.style.transitionDuration = `500ms`;
+    title_icon.style.borderRadius = `0.5vw`;
     let title = document.getElementById("title");
     title.style.transitionDuration = `500ms`;
     title.style.color = `#0485d6`;
