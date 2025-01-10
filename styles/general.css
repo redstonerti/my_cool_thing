@@ -370,25 +370,62 @@ table {
 }
 
 
-
-/*#faculty-img {
-    width: 30%;
+#faculty-img {
     height: auto;
-    padding: 1%;
-    margin: 1%;
-}*/
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/*#faculty-head {
+.faculty-head {
     color: #53799E;
-}*/
+}
 
-#faculty-text {
+.lesson-description-head {
+    color: #53799E;
+}
 
-    display: flex;
+.lesson-description-div {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.7vh;
+    border-radius: 2vh;
+    padding: 1vw;
+    border: 0.2vw dashed black;
+    box-shadow: 1vw 1vw 1vw gray;
+    transition-duration: 300ms;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.lesson-description-div:hover {
+    border: 0.3vw black solid;
+    box-shadow: 1vw 1vw gray;
+    transition-duration: 300ms;
+}
+
+.faculty-text {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.7vh;
+    border-radius: 2vh;
+    padding: 1vw;
+    border: 0.2vw dashed black;
+    box-shadow: 1vw 1vw 1vw gray;
+    transition-duration: 300ms;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.faculty-text:hover {
+    border: 0.3vw black solid;
+    box-shadow: 1vw 1vw gray;
+    transition-duration: 300ms;
 }
 
 button {
-
     margin: 1%;
     border-radius: 2vh;
     cursor: pointer;
@@ -402,4 +439,27 @@ button {
     -webkit-text-stroke-color: rgb(255, 255, 255);
     font-size: 6vh;
     color: #0485d6;
+    outline-style: solid;
+    outline-color: white;
+    background-color: #e1eaf4
+}
+
+.teacher-img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    margin-right: 1vw;
+}
+
+.teacher-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.teacher-properties {
+    background-color: rgb(231, 231, 231);
+    border-radius: 1vw;
+    padding: 1vw;
 }
