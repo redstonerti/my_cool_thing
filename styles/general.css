@@ -366,18 +366,29 @@ table {
     background-color: black;
 }
 
-#faculty-img {
+}
+
+
+/*#faculty-img {
     width: 30%;
     height: auto;
     padding: 1%;
     margin: 1%;
-}
+}*/
 
-#faculty-head {
+/*#faculty-head {
     color: #53799E;
-}
+}*/
 
 #faculty-text {
 
     display: flex;
+}
+
+button {
+
+    margin: 1%;
+    outline-style: solid;
+    outline-color: white;
+    background-color: #e1eaf4
 }
