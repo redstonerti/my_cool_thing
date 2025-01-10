@@ -1,4 +1,4 @@
-let progress = false;
+let progress = 0;
 let scroll_delta = 0;
 let scroll_sensitivity = 0.000001;
 
@@ -10,7 +10,7 @@ let no_animation = localStorage.getItem('animationPlayed');
 
 //Γραψε οτι εχεις ηδη δειξει το animation
 localStorage.setItem('animationPlayed', 'true');
-if (no_animation)
+if (no_animation == 'true')
     progress = 1;
 
 window.addEventListener('wheel', (event) => {
@@ -148,12 +148,13 @@ function show_popup() {
     let should_not_create_popup = localStorage.getItem('popup_created');
 
     //Γραψε οτι εχεις ηδη δειξει το popup
-    localStorage.setItem('popup_created', 'true');
+    localStorage.setItem('popup_created', true);
 
     //Uncomment για να βλεπεις το popup καθε φορα
     //should_not_create_popup = false;
 
-    if (should_not_create_popup) {
+    if (should_not_create_popup == 'true') {
+        console.log("returning");
         return;
     }
     let home_popup = document.getElementById('home_popup');
