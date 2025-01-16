@@ -42,13 +42,13 @@ h2.classes_styling {
     border: 0.5vw solid #3c5873;
     border-radius: 3vw;
     margin: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
     background-color: rgb(231, 231, 231);
     background-image: url('../images/sky.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
 }
 
 .box-party {
@@ -73,12 +73,30 @@ h2.classes_styling {
     background-color: rgb(231, 231, 231);
 }
 
-tr:hover {
-    background-color: #c9ced3;
+.box-epit tr:hover {
+    background-color: #53799E;
+    color: white;
+    transition-duration: 100ms;
+}
+
+tr {
+    transition-duration: 500ms;
+}
+
+td,
+th {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-radius: 0.3vw;
+    transition-duration: 300ms;
 }
 
 table {
-    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 }
 
 /* Μορφοποίηση lightbox */
@@ -142,13 +160,6 @@ table {
 
 }
 
-#contact-table td {
-    border: 0.1vw solid #4c6f8e;
-    border-collapse: collapse;
-    border-style: outset;
-
-}
-
 .box-contact {
 
     width: 89vw;
@@ -162,11 +173,6 @@ table {
 
 }
 
-#contact-table tr:hover {
-
-    background-color: rgb(231, 231, 231);
-}
-
 .box-contact a {
     color: #4c6f8e;
     font-style: italic;
@@ -175,6 +181,13 @@ table {
 
 .box-contact a:hover {
     text-decoration: underline
+}
+
+#contact-table td {
+    border: 0.1vw solid #4c6f8e;
+    border-collapse: collapse;
+    border-style: outset;
+
 }
 
 .box-contact a:visited {
@@ -391,11 +404,17 @@ table {
     transition-duration: 300ms;
     margin-bottom: 1vw;
     margin-top: 1vw;
+    width: fit-content;
     background-image: url('../images/faculty/faculty-kids.png');
 
 }
 
-
+#faculty-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 
 .faculty-text {
     width: 20vw;
@@ -408,7 +427,7 @@ table {
     border: 0.2vw dashed black;
     box-shadow: 1vw 1vw 1vw gray;
     transition-duration: 300ms;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
     margin-top: 1vw;
 }
 
@@ -470,7 +489,7 @@ button {
 #home_popup:hover {
     transition-duration: 200ms;
     box-shadow: 1vw 1vw 1vw black;
-    height: 34vh;
+    height: 31vh;
 }
 
 #popup_button {
@@ -550,6 +569,15 @@ button {
 #answers {
     display: grid;
     grid-template-columns: auto auto;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+
+
+#quiz_top {
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .answer_div {

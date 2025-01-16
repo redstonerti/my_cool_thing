@@ -6,7 +6,7 @@ let scroll_sensitivity = 0.000001;
 let no_animation = localStorage.getItem('animationPlayed');
 
 //Uncomment για να βλέπεις το animation κάθε φορά
-//no_animation = false;
+no_animation = false;
 
 //Γραψε οτι εχεις ηδη δειξει το animation
 localStorage.setItem('animationPlayed', 'true');
@@ -151,7 +151,7 @@ function show_popup() {
     localStorage.setItem('popup_created', true);
 
     //Uncomment για να βλεπεις το popup καθε φορα
-    //should_not_create_popup = false;
+    should_not_create_popup = false;
 
     if (should_not_create_popup == 'true') {
         console.log("returning");
